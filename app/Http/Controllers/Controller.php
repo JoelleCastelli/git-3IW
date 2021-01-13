@@ -10,4 +10,17 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    private $grade = 20;
+
+    /**
+     * Controller constructor.
+     * @param $grade
+     */
+    public function __construct($grade)
+    {
+        $this->grade = $grade;
+    }
+
+
 }
