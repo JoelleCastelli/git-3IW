@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    private $grade = 20;
+    private $grade = 19.5;
 
     /**
      * Controller constructor.
